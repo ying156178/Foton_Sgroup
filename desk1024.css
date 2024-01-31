@@ -1,0 +1,41 @@
+@media only screen and (min-width: 768px) and (max-width:1024px){
+    .logo, .menutext, .tools{
+        display: none;
+    }
+    .logo1, .search{
+        display: block;
+    }
+    .logo1{
+        width: 12%;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .logo1 a img{
+        width: 100%;
+    }
+    .container{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+    }
+    .container .navbar{
+        position: relative;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+    .fa-solid.fa-bars{
+        background-color: transparent;
+        font-size: 20px;
+        color: #58468c;
+        font-weight: 900;
+        position: absolute;
+        left: 0;
+        top: 50px;
+        padding-left: 12%;
+    }
+}

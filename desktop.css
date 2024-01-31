@@ -22,6 +22,12 @@
 .logo a img{
     width: 100%;
 }
+.logo1{
+    display: none;
+}
+.search{
+    display: none;
+}
 /* menu list */
 .menutext{
     width: 70%;
@@ -45,7 +51,15 @@
     display: flex;
     width: 10%;
     justify-content: space-between;
+    align-items: center;
 }
 .tools i{
     color: #58468c;
+    font-size: 16px;
+}
+.fa-solid.fa-bars{
+    padding: 10px;
+    background-color: #58468c;
+    color: white;
+    border-radius: 4px;
 }
