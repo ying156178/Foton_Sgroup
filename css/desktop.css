@@ -227,6 +227,7 @@ ul{
     display: flex;
     justify-content: center;
     margin: 0 auto;
+    transform: translateX(-0.9375rem);
 }
 .plan-desc div a{
     display: block;
@@ -263,4 +264,66 @@ ul{
 }
 .plan:nth-child(3) .plan-desc div a:hover{
     box-shadow: rgba(255, 138, 115, 0.5) 0px 10px 25px 0px;
+}
+/* footer */
+footer{
+    background-color: #343352;
+}
+/* top-footer section */
+.top-footer{
+    display: flex;
+    align-items: baseline;
+    padding: 7.375rem 0rem 7.8125rem;
+    width: 90%;
+    margin: 0 auto;
+} 
+.part-of-top-footer{
+    width: 25%;
+}  
+.part-of-top-footer:nth-child(1) a{
+    width: 15%;
+    height: auto;
+}
+.part-of-top-footer:nth-child(1) a img{
+    max-width: 30%;
+}
+.part-of-top-footer:nth-child(1) p{
+    color: #fff;
+    padding: 1rem 0;
+}
+.part-of-top-footer:nth-child(1) ul{
+    display: flex;
+}
+.part-of-top-footer:nth-child(1) ul li a i{
+    font-size: 1.1875rem;
+    margin: 0px 0.875rem 0px 0px;
+    color: rgb(36, 36, 43);
+    width: 2.875rem;
+    height: 2.875rem;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 10px 10px rgba(45,45,71,.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition:.2s cubic-bezier(.02,.54,.58,1);
+}
+.part-of-top-footer:nth-child(1) ul li a i:hover{
+    color: rgb(255, 138, 155);
+}
+.part-of-top-footer:nth-child(2) h5{
+    font-size: 1.125rem;
+    color: #fff;
+    margin: 0.5625rem 0rem 1.3rem;
+    letter-spacing: 0;
+    line-height: 1.3em;
+    font-weight: 400;
+}
+.part-of-top-footer:nth-child(2) ul li a{
+    display: inline-block;
+    font-size: 1rem;
+    padding: 0 0 0 0.625rem;
+    color: rgb(255, 255, 255);
+    margin-bottom: 0.9rem;
+
 }
