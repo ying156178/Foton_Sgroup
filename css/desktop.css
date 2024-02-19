@@ -31,6 +31,10 @@ h3{
     line-height: 1.22rem;
     font-weight: 400;
 }
+ul{
+    list-style: none;
+}
+
 /* navbar */
 .container .navbar{
     display: flex;
@@ -64,7 +68,7 @@ h3{
     list-style-type: none;
 }
 .list-spec span{
-    font-family: 'Popins', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 14px;
     color: #58468c;
     letter-spacing: .085em;
@@ -140,4 +144,115 @@ h3{
 .service-desc{
     width: 80%;
     padding-left: 1.5625rem;
+}
+/* pricing table section */
+.pricing-table{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 3.125rem;
+    /* temp padding bottom */
+    padding-bottom: 120px;
+}
+.pricing-table .plan:nth-child(1):hover,.pricing-table .plan:nth-child(2):hover{
+    box-shadow: 0 10px 55px 5px rgba(137,173,255,.35);
+}
+.pricing-table .plan:nth-child(3){
+    box-shadow: 0 10px 55px 5px rgba(137,173,255,.35);
+}
+.plan{
+    display: flex;
+    justify-content: center;
+    border-radius: 3%;
+}
+.price{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 3.1875rem 0.5rem 0px ;
+}
+.price .term{
+    font-size: 0.6875rem;
+    line-height: 1.25rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.125rem;
+    text-align: right;
+}
+.price-num{
+    color: #58468c;
+    font-size: 4.375rem;
+    line-height: 1em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300 !important;
+    text-align: right;
+}
+.price-num sup{
+    position: relative;
+    vertical-align: super;
+    bottom: 0.9375rem;
+    font-size: 1.5rem;
+    line-height: 1em;
+    font-weight: 600;
+}
+.plan-desc{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    padding-left: 0.8rem;
+}
+.plan-desc span{
+    color: #5d4d8c;
+    font-family: 'Poppins',sans-serif;
+    font-size: 1.375rem;
+    line-height: 1.625rem;
+    font-weight: 500;
+    padding-top: 0.5rem;
+}
+.plan-desc span:first-child{
+    padding-top: 5.5rem;
+}
+.plan-desc ul{
+    display: block;
+    padding: 1.875rem 0rem 2.8125rem;
+}
+.plan-desc ul li{
+    padding: 0.25rem 0rem;
+}
+.plan-desc a{
+    padding: 0.75rem 2.3125rem;
+    color: #fff;
+    border: 1px solid transparent;
+    text-align: center;
+    vertical-align: center;
+    font-size: 0.75rem;
+    font-weight: 500;
+    font-family: 'Poppins',sans-serif;
+    line-height: 2em;
+    letter-spacing: .125em;
+    border-radius: 3em;
+    width: 80%;
+    margin-bottom: 3.6875rem;
+    transition: box-shadow .35s cubic-bezier(.02,.54,.58,1),-webkit-box-shadow .35s cubic-bezier(.02,.54,.58,1);
+}
+.plan:first-child .plan-desc a{
+    background-color: rgb(123, 185, 255);
+    box-shadow: none;
+}
+.plan:first-child .plan-desc a:hover{
+    box-shadow: rgba(123, 185, 255,0.5) 0px 10px 25px 0px;
+}
+.plan:nth-child(2) .plan-desc a{
+    background-color: rgb(85, 128, 255);
+    box-shadow: none;
+}
+.plan:nth-child(2) .plan-desc a:hover{
+    box-shadow: rgba(85, 128, 255, 0.5) 0px 10px 25px 0px;
+}
+.plan:nth-child(3) .plan-desc a{
+    background-color: rgb(255, 138, 115);
+    box-shadow: none;
+}
+.plan:nth-child(3) .plan-desc a:hover{
+    box-shadow: rgba(255, 138, 115, 0.5) 0px 10px 25px 0px;
 }
