@@ -1,0 +1,14 @@
+@media only screen and (max-width:768px){
+    /* overview */
+    h3{
+        font-size: 1.5rem !important;
+    }
+    /* opensource service section */
+    .service{
+        width: 75% !important;
+    }
+    .opensource-desc{
+        width: 90% !important;
+    }
+
+}
