@@ -46,6 +46,8 @@ header .navbar{
     padding-left: 3%;
     padding-right: 3%;
     align-items: center;
+    align-items: center;
+    padding-bottom: 50px;
 }
 /* navbar logo */
 .logo{
@@ -161,27 +163,27 @@ header .navbar{
     .up6{
         position: absolute;
         width: 5%;
-        bottom:25%;
+        bottom:20%;
         right: 28%;
     }
     .up7{
         position: absolute;
         width: 6%;
-        bottom: 20%;
+        bottom: 13%;
         right: 45%;
     }
     .up8{
         position: absolute;
         width: 8%;
-        bottom: 23%;
+        bottom: 17%;
         left: 30%;
     }
     .u-potential-text{
         /* position: absolute; */
-        width: 40%;
+        width: 43%;
         height: auto;
         margin: auto;
-        margin-top: 15%;
+        margin-top: 12%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -192,31 +194,24 @@ header .navbar{
         font-size: 3.25rem;
         font-weight: 300;
         margin-bottom: 2rem;
+        line-height: 4rem;
     }
     .u-potential-text p{
+        width: 90%;
         text-align: center;
         font-size: 1.2rem;
         letter-spacing: 0.025rem;
+        padding-bottom: 1.8rem;
     }
     .u-potential-text ul{
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
+        width: 60%;
+
     }
-    .u-potential-text ul li a:first-child{
+    .u-potential-text ul li a{
         display: block;
-    padding: 0.75rem 2.3125rem;
-    color: #fff;
-    border: 1px solid transparent;
-    text-align: center;
-    font-size: 0.75rem;
-    font-weight: 500;
-    font-family: 'Poppins',sans-serif;
-    line-height: 2em;
-    letter-spacing: .125em;
-    border-radius: 3em;
-    margin-bottom: 3.6875rem;
-    transition: box-shadow .35s cubic-bezier(.02,.54,.58,1),-webkit-box-shadow .35s cubic-bezier(.02,.54,.58,1);
     }
 /* open source service */
 .opensource-desc{
@@ -355,7 +350,7 @@ header .navbar{
     margin: 0 auto;
     transform: translateX(-0.9375rem);
 }
-.plan-desc div a, u-potential-text ul li a{
+.plan-desc div a, u-potential-text ul li a, .u-potential-text ul li a{
     display: block;
     padding: 0.75rem 2.3125rem;
     color: #fff;
@@ -377,18 +372,18 @@ header .navbar{
 .plan:first-child .plan-desc div a:hover{
     box-shadow: rgba(123, 185, 255,0.5) 0px 10px 25px 0px;
 }
-.plan:nth-child(2) .plan-desc div a{
+.plan:nth-child(2) .plan-desc div a, .u-potential-text ul li:last-child a{
     background-color: rgb(85, 128, 255);
     box-shadow: none;
 }
-.plan:nth-child(2) .plan-desc div a:hover{
+.plan:nth-child(2) .plan-desc div a:hover, .u-potential-text ul li:last-child a:hover{
     box-shadow: rgba(85, 128, 255, 0.5) 0px 10px 25px 0px;
 }
-.plan:nth-child(3) .plan-desc div a{
+.plan:nth-child(3) .plan-desc div a, .u-potential-text ul li:first-child a{
     background-color: rgb(255, 138, 115);
     box-shadow: none;
 }
-.plan:nth-child(3) .plan-desc div a:hover{
+.plan:nth-child(3) .plan-desc div a:hover, .u-potential-text ul li:first-child a:hover{
     box-shadow: rgba(255, 138, 115, 0.5) 0px 10px 25px 0px;
 }
 /* footer */
