@@ -10,5 +10,16 @@
     .opensource-desc{
         width: 90% !important;
     }
+    /* pricing table section */
+    .pricing-table{
+        flex-direction: column;
+        width: 100%;
+    }
+    .plan{
+        width: 80%;
+    }
+    .plan-desc a{
+        padding: 0.5rem 1.75rem;
+    }
 
 }
