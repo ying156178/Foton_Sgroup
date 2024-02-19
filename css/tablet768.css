@@ -21,5 +21,13 @@
     .plan-desc a{
         padding: 0.5rem 1.75rem;
     }
+    /* footer */
+    /* top-footer section */
+    /* .top-footer{
+        width: 100%;
+    } */
+    .part-of-top-footer{
+        width: 40% !important;
+    }
 
 }
