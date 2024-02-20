@@ -78,16 +78,11 @@ header .navbar{
 }
 .list-spec{
     position: relative;
-    box-shadow: 0.35s cubic-bezier(0.02, 0.54, 0.58, 1) 0s; 
-    -webkit-box-shadow: 0.35s cubic-bezier(0.02, 0.54, 0.58, 1) 0s;
     cursor: pointer;
-}
-.list-spec span{
-
 }
 .second{
     position: absolute;
-    top: 200%;
+    top: 60px;
     left: -70%;
     z-index: 2;
     width: 600%;
@@ -100,17 +95,23 @@ header .navbar{
     line-height: 2em;
     box-shadow: 0 10px 55px 5px rgba(137,173,255,.35);
     text-align: left;
+    overflow: hidden;
 
 }
 .second .second-spec{
     display: block;
     width: 100%;
-    /* padding: 0.75rem 4rem; */
     text-align: left;
     padding: 0.3rem 0;
     position: relative;
 }
-.second-spec::before{
+.second-sub-list{
+    position: relative;
+}
+.second-sub-list-spec{
+    position: relative;
+}
+.second-spec::before, .second-sub-list-spec:before{
     opacity: 0;
     content: '';
     position: absolute;
@@ -123,27 +124,54 @@ header .navbar{
     transition: opacity .2s cubic-bezier(.02,.54,.58,1);
     transition: opacity .3s cubic-bezier(.02,.54,.58,1),left .2s,right .2s;
 }
-.second-spec:hover::before{
+.second-spec:hover::before, .second-sub-list-spec:hover::before{
     opacity: 1;
     left: 2px;
 }
 .second-spec:hover{
     opacity: 1;
 }
-.second-spec>span{
+.second-spec>span, .second-sub-list-spec>span{
     position: relative;
     display: block;
     overflow: hidden;
     padding: 0 30px 0 0;
     transition: padding .2s cubic-bezier(.02,.54,.58,1);
 }
-.second-spec:hover>span{
-    padding: 0 10px 0 15px
+.second-spec:hover>span, .second-sub-list-spec:hover>span{
+    padding: 0 10px 0 15px;
 }
-.second-spec:nth-child(3)>span{
+.second-inner{
+    position: relative;
+}
+.second-inner-list{
+    position: relative;
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-evenly;
+}
+.second-sub{
+    width: 18%;
+    position: relative;
+}
+.list-spec:last-child .second{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 115px;
+}
+.list-spec:nth-child(3) .second{
+    width: 280%;
+}
+.list-spec:nth-child(4) .second,  
+.list-spec:nth-child(5) .second{
+    width: 520%;
+}
+.list-spec:first-child .second .second-spec:nth-child(3)>span{
     padding: 0 10px 0 15px !important;
 }
-.second-spec:nth-child(3)::before{
+.list-spec:first-child .second-spec:nth-child(3)::before{
     opacity: 1;
     left: 2px;
 }
@@ -169,9 +197,9 @@ header .navbar{
     color: #ff8a73;
 }
 .list-spec:hover>.second, .second:hover{
-    display: block;
+    display: block !important;
 }
-.list-spec>span{
+.list-spec>span, .second-sub a span{
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
     color: #58468c;
@@ -180,6 +208,8 @@ header .navbar{
     font-weight: 500;
     line-height: 23px;
     cursor: pointer;
+}
+.list-spec>span{
     padding-top: 100%;
     padding-bottom: 100%;
 }
