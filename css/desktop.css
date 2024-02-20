@@ -1,5 +1,5 @@
 /* reset css */
-*{
+*,::after,::before{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -71,8 +71,104 @@ header .navbar{
     width: 100%;
     justify-content: space-evenly;
     list-style-type: none;
+    cursor: pointer;
+}
+.list-spec{
+    position: relative;
+    box-shadow: 0.35s cubic-bezier(0.02, 0.54, 0.58, 1) 0s; 
+    -webkit-box-shadow: 0.35s cubic-bezier(0.02, 0.54, 0.58, 1) 0s;
+    cursor: pointer;
 }
 .list-spec span{
+
+}
+.second{
+    position: absolute;
+    top: 200%;
+    left: -70%;
+    z-index: 2;
+    width: 600%;
+    border-radius: 7px;
+    display: none;
+    padding: 1.5rem 2.3125rem;
+    background-color: #fff;
+    border: 1px solid transparent;
+    font-family: 'Poppins',sans-serif;
+    line-height: 2em;
+    box-shadow: 0 10px 55px 5px rgba(137,173,255,.35);
+    text-align: left;
+
+}
+.second .second-spec{
+    display: block;
+    width: 100%;
+    /* padding: 0.75rem 4rem; */
+    text-align: left;
+    padding: 0.3rem 0;
+    position: relative;
+}
+.second-spec::before{
+    opacity: 0;
+    content: '';
+    position: absolute;
+    left: -13px;
+    top: calc(50% - 3px);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #5580ff;
+    transition: opacity .2s cubic-bezier(.02,.54,.58,1);
+    transition: opacity .3s cubic-bezier(.02,.54,.58,1),left .2s,right .2s;
+}
+.second-spec:hover::before{
+    opacity: 1;
+    left: 2px;
+}
+.second-spec:hover{
+    opacity: 1;
+}
+.second-spec>span{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding: 0 30px 0 0;
+    transition: padding .2s cubic-bezier(.02,.54,.58,1);
+}
+.second-spec:hover>span{
+    padding: 0 10px 0 15px
+}
+.second-spec:nth-child(3)>span{
+    padding: 0 10px 0 15px !important;
+}
+.second-spec:nth-child(3)::before{
+    opacity: 1;
+    left: 2px;
+}
+.list-spec:first-child::before{
+    opacity: 1;
+}
+.list-spec::before{
+    opacity: 0;
+    content: '';
+    position: absolute;
+    left: -13px;
+    top: calc(50% - 1px);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #5580ff;
+    transition: opacity .2s cubic-bezier(.02,.54,.58,1);
+}
+.list-spec:hover:before{
+    opacity: 1;
+}
+.list-spec:hover>span{
+    color: #ff8a73;
+}
+.list-spec:hover>.second, .second:hover{
+    display: block;
+}
+.list-spec>span{
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
     color: #58468c;
@@ -80,6 +176,9 @@ header .navbar{
     text-transform: uppercase;
     font-weight: 500;
     line-height: 23px;
+    cursor: pointer;
+    padding-top: 100%;
+    padding-bottom: 100%;
 }
 .tools{
     display: flex;
@@ -456,9 +555,6 @@ footer{
 }
 .part-of-top-footer:nth-child(4) ul li{
     width: 100%;
-}
-.part-of-top-footer:nth-child(4) ul li a img{
-
 }
 .part-of-top-footer:nth-child(1), .part-of-top-footer:nth-child(2), .part-of-top-footer:nth-child(4){
     width: 28%;
