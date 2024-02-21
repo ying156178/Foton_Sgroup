@@ -80,7 +80,8 @@ header .navbar{
     position: relative;
     cursor: pointer;
 }
-.second{
+.second, 
+.list-spec:nth-child(3) .second .second-spec:nth-child(5) .third{
     position: absolute;
     top: 60px;
     left: -70%;
@@ -98,7 +99,7 @@ header .navbar{
     overflow: hidden;
 
 }
-.second .second-spec{
+.second .second-spec, .second-sub-list-spec{
     display: block;
     width: 100%;
     text-align: left;
@@ -154,6 +155,22 @@ header .navbar{
 .second-sub{
     width: 18%;
     position: relative;
+}
+.list-spec:nth-child(3) .second .second-spec:nth-child(5),
+.list-spec:nth-child(3) .second .second-spec:nth-child(5) .third .third-spec{
+    position: relative;
+}
+.list-spec:nth-child(3) .second{
+    overflow: visible;
+}
+.list-spec:nth-child(3) .second .second-spec:nth-child(5) .third{
+    position: absolute;
+    z-index: 8;
+    display: block;
+    width: 150%;
+    overflow: visible;
+    top: -10%;
+    left: 100%;
 }
 .list-spec:last-child .second{
     position: fixed;
