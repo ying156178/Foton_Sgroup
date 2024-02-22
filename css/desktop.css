@@ -99,7 +99,9 @@ header .navbar{
     overflow: hidden;
 
 }
-.second .second-spec, .second-sub-list-spec{
+.second .second-spec, 
+.second-sub-list-spec,
+.list-spec:nth-child(3) .second .second-spec:nth-child(5) .third .third-spec{
     display: block;
     width: 100%;
     text-align: left;
@@ -112,7 +114,9 @@ header .navbar{
 .second-sub-list-spec{
     position: relative;
 }
-.second-spec::before, .second-sub-list-spec:before{
+.second-spec::before, 
+.second-sub-list-spec::before,
+.third-spec::before{
     opacity: 0;
     content: '';
     position: absolute;
@@ -125,22 +129,28 @@ header .navbar{
     transition: opacity .2s cubic-bezier(.02,.54,.58,1);
     transition: opacity .3s cubic-bezier(.02,.54,.58,1),left .2s,right .2s;
 }
-.second-spec:hover::before, .second-sub-list-spec:hover::before{
+.second-spec:hover::before, 
+.second-sub-list-spec:hover::before,
+.third-spec:hover::before{
     opacity: 1;
     left: 2px;
 }
 .second-spec:hover{
     opacity: 1;
 }
-.second-spec>span, .second-sub-list-spec>span{
+.second-spec>span, 
+.second-sub-list-spec>span,
+.list-spec:nth-child(3) .second .second-spec:nth-child(5) .third .third-spec>span{
     position: relative;
     display: block;
     overflow: hidden;
     padding: 0 30px 0 0;
     transition: padding .2s cubic-bezier(.02,.54,.58,1);
 }
-.second-spec:hover>span, .second-sub-list-spec:hover>span{
-    padding: 0 10px 0 15px;
+.second-spec:hover>span, 
+.second-sub-list-spec:hover>span,
+.third-spec:hover>span{
+    padding: 0 10px 0 15px !important;
 }
 .second-inner{
     position: relative;
@@ -156,6 +166,13 @@ header .navbar{
     width: 18%;
     position: relative;
 }
+.third{
+    display: none !important;
+}
+.list-spec:nth-child(3) .second .second-spec:nth-child(5):hover .third,
+.list-spec:nth-child(3) .second .second-spec:nth-child(5) .third:hover{
+    display: block !important;
+}
 .list-spec:nth-child(3) .second .second-spec:nth-child(5),
 .list-spec:nth-child(3) .second .second-spec:nth-child(5) .third .third-spec{
     position: relative;
@@ -169,7 +186,7 @@ header .navbar{
     display: block;
     width: 150%;
     overflow: visible;
-    top: -10%;
+    top: -15%;
     left: 100%;
 }
 .list-spec:last-child .second{
