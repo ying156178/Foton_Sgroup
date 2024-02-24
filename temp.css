@@ -1,0 +1,83 @@
+.up1{
+    position: absolute;
+    width: 22%;
+    top: 25%;
+    left: 10% ;
+}
+.up2{
+    position: absolute;
+    width: 7%;
+    top: 23%;
+    left:35%;
+}
+.up3{
+    position: absolute;
+    width: 5%;
+    top: 17%;
+    left: 50%;
+}
+.up4{
+    position: absolute;
+    width: 7%;
+    top: 23%;
+    right: 28%;
+}
+.up5{
+    position: absolute;
+    width: 5%;
+    top: 35%;
+    right: 20%;
+}
+.up6{
+    position: absolute;
+    width: 5%;
+    bottom:20%;
+    right: 28%;
+}
+.up7{
+    position: absolute;
+    width: 6%;
+    bottom: 13%;
+    right: 45%;
+}
+.up8{
+    position: absolute;
+    width: 8%;
+    bottom: 17%;
+    left: 30%;
+}
+.u-potential-text{
+    /* position: absolute; */
+    width: 43%;
+    height: auto;
+    margin: auto;
+    margin-top: 12%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.u-potential-text h1{
+    font-size: 3.25rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    line-height: 4rem;
+}
+.u-potential-text p{
+    width: 90%;
+    text-align: center;
+    font-size: 1.2rem;
+    letter-spacing: 0.025rem;
+    padding-bottom: 1.8rem;
+}
+.u-potential-text ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+
+}
+.u-potential-text ul li a{
+    display: block;
+}

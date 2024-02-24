@@ -3,6 +3,7 @@
     h3{
         font-size: 1.5rem !important;
     }
+    /* overview */
     /* opensource service section */
     .service{
         width: 75% !important;
@@ -10,6 +11,7 @@
     .opensource-desc{
         width: 90% !important;
     }
+    /* opensource service section */
     /* pricing table section */
     .pricing-table{
         flex-direction: column;
@@ -21,6 +23,8 @@
     .plan-desc a{
         padding: 0.5rem 1.75rem;
     }
+    /* pricing table section */
+
     /* footer */
     /* top-footer section */
     /* .top-footer{
@@ -29,5 +33,8 @@
     .part-of-top-footer{
         width: 40% !important;
     }
+    /* top-footer section */
+
+    /* footer */
 
 }

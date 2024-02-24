@@ -36,6 +36,7 @@ h3{
 }
 ul{
     list-style: none;
+    display: block;
 }
 
 /* navbar */
@@ -45,13 +46,15 @@ ul{
 header .navbar{
     display: flex;
     justify-content: space-between;
-    padding-top: 50px;
+    padding-top: 30px;
     padding-left: 3%;
     padding-right: 3%;
     align-items: center;
     align-items: center;
-    padding-bottom: 50px;
+    padding-bottom: 25px;
 }
+/* navbar */
+
 /* navbar logo */
 .logo{
     width: 7%;
@@ -65,9 +68,10 @@ header .navbar{
 .search{
     display: none;
 }
+/* navbar logo */
 /* menu list */
 .menutext{
-    width: 70%;
+    width: 47%;
 }
 .menulist{
     display: flex;
@@ -80,8 +84,12 @@ header .navbar{
     position: relative;
     cursor: pointer;
 }
-.second, 
-.list-spec:nth-child(3) .second .second-spec:nth-child(5) .third{
+.second, .third,
+.list-spec:nth-child(3) .second .second-spec:nth-child(5) .third,
+.list-spec:nth-child(3) .second .second-spec:nth-child(6) .third,
+.list-spec:nth-child(4) .second .second-spec:nth-child(5) .third,
+.list-spec:nth-child(5) .second .second-spec:nth-child(3) .third,
+.list-spec:nth-child(5) .second .second-spec:nth-child(4) .third{
     position: absolute;
     top: 60px;
     left: -70%;
@@ -96,17 +104,32 @@ header .navbar{
     line-height: 2em;
     box-shadow: 0 10px 55px 5px rgba(137,173,255,.35);
     text-align: left;
-    overflow: hidden;
-
 }
 .second .second-spec, 
 .second-sub-list-spec,
-.list-spec:nth-child(3) .second .second-spec:nth-child(5) .third .third-spec{
+.list-spec:nth-child(3) .second .second-spec:nth-child(5) .third .third-spec,
+.list-spec:nth-child(3) .second .second-spec:nth-child(6) .third .third-spec,
+.list-spec:nth-child(4) .second .second-spec:nth-child(5) .third .third-spec,
+.list-spec:nth-child(5) .second .second-spec:nth-child(3) .third .third-spec,
+.list-spec:nth-child(5) .second .second-spec:nth-child(4) .third .third-spec{
     display: block;
     width: 100%;
     text-align: left;
     padding: 0.3rem 0;
     position: relative;
+}
+.second-spec>span, 
+.second-sub-list-spec>span,
+.list-spec:nth-child(3) .second .second-spec:nth-child(5) .third .third-spec>span,
+.list-spec:nth-child(3) .second .second-spec:nth-child(6) .third .third-spec>span,
+.list-spec:nth-child(4) .second .second-spec:nth-child(5) .third .third-spec>span,
+.list-spec:nth-child(5) .second .second-spec:nth-child(3) .third .third-spec>span,
+.list-spec:nth-child(5) .second .second-spec:nth-child(4) .third .third-spec>span{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding: 0 30px 0 0;
+    transition: padding .2s cubic-bezier(.02,.54,.58,1);
 }
 .second-sub-list{
     position: relative;
@@ -138,15 +161,6 @@ header .navbar{
 .second-spec:hover{
     opacity: 1;
 }
-.second-spec>span, 
-.second-sub-list-spec>span,
-.list-spec:nth-child(3) .second .second-spec:nth-child(5) .third .third-spec>span{
-    position: relative;
-    display: block;
-    overflow: hidden;
-    padding: 0 30px 0 0;
-    transition: padding .2s cubic-bezier(.02,.54,.58,1);
-}
 .second-spec:hover>span, 
 .second-sub-list-spec:hover>span,
 .third-spec:hover>span{
@@ -170,17 +184,22 @@ header .navbar{
     display: none !important;
 }
 .list-spec:nth-child(3) .second .second-spec:nth-child(5):hover .third,
-.list-spec:nth-child(3) .second .second-spec:nth-child(5) .third:hover{
+.list-spec:nth-child(3) .second .second-spec:nth-child(5) .third:hover,
+.list-spec:nth-child(3) .second .second-spec:nth-child(6):hover .third,
+.list-spec:nth-child(3) .second .second-spec:nth-child(6) .third:hover,
+.list-spec:nth-child(4) .second .second-spec:nth-child(5):hover .third,
+.list-spec:nth-child(4) .second .second-spec:nth-child(5) .third:hover,
+.list-spec:nth-child(5) .second .second-spec:nth-child(3):hover .third,
+.list-spec:nth-child(5) .second .second-spec:nth-child(3) .third:hover,
+.list-spec:nth-child(5) .second .second-spec:nth-child(4):hover .third,
+.list-spec:nth-child(5) .second .second-spec:nth-child(4) .third:hover{
     display: block !important;
 }
-.list-spec:nth-child(3) .second .second-spec:nth-child(5),
-.list-spec:nth-child(3) .second .second-spec:nth-child(5) .third .third-spec{
-    position: relative;
-}
-.list-spec:nth-child(3) .second{
-    overflow: visible;
-}
-.list-spec:nth-child(3) .second .second-spec:nth-child(5) .third{
+.list-spec:nth-child(3) .second .second-spec:nth-child(5) .third,
+.list-spec:nth-child(3) .second .second-spec:nth-child(6) .third,
+.list-spec:nth-child(4) .second .second-spec:nth-child(5) .third,
+.list-spec:nth-child(5) .second .second-spec:nth-child(3) .third,
+.list-spec:nth-child(5) .second .second-spec:nth-child(4) .third{
     position: absolute;
     z-index: 8;
     display: block;
@@ -246,16 +265,28 @@ header .navbar{
 .list-spec>span{
     padding-top: 100%;
     padding-bottom: 100%;
+
 }
+/* icon list in header */
 .tools{
-    display: flex;
     width: 10%;
+}
+.tools-list{
+    display: flex;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
 }
 .tools i{
     color: #58468c;
-    font-size: 16px;
+    font-size: 20px;
+}
+.tools .fa-solid{
+    transition: color .2s cubic-bezier(.02,.54,.58,1);
+    transition: background-color .2s cubic-bezier(.02,.54,.58,1);
+}
+.tools .fa-solid:hover{
+    color: #ff8a73;
 }
 .fa-solid.fa-bars{
     padding: 10px;
@@ -263,6 +294,35 @@ header .navbar{
     color: white;
     border-radius: 4px;
 }
+.fa-solid.fa-bars:hover{
+    background-color: #ff8a73;
+    color: #dde7ff;
+}
+.cart-dropdown{
+    display: block;
+    position: absolute;
+    top: 150px;
+    left: auto;
+    right: 7%;
+    width: 25%;
+    background-color: #fff;
+    text-align: left;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    box-sizing: border-box;
+    box-shadow: 0 10px 55px 5px rgba(137,173,255,.35);
+    border-radius: 10px;
+    transition: all .35s cubic-bezier(.53,.01,.18,1);
+    margin: 30px;
+    padding: 30px;
+}
+.tools-list:first-child .tools-spec:hover .cart-dropdown{
+    opacity: 1;
+    visibility: visible;
+    top: 80px;
+}
+/* icon list in header */
 /* header background */
 .header-background{
     width: 100%;
@@ -289,96 +349,99 @@ header .navbar{
     left: -3%;
     width: 18%;
 }
+/* header background */
 /* untapped potential section */
-    .untapped-potential-section{
-        width: 90%;
-        overflow: hidden;
-        margin: 0 auto;
-        margin-bottom: 25rem;
+.untapped-potential-section{
+    width: 85%;
+    margin: 0 auto;
+    height: 100vh;
+}
+.untapped-potential{
+    display: grid;
+    grid-template-columns: 1.5fr 0.75fr 0.75fr 0.75fr 0.75fr;
+    grid-template-rows: 0.75fr 1.5fr 0.75fr;
+    justify-items: center;
+    align-items: center;
+    grid-auto-rows: 100px;
+    column-gap: 2%;
+    grid-template-areas:
+    'cloud wifi chat coin user'
+    'cloud content content content user'
+    'cloud laptop wallet shield user'
     }
-    .up1{
-        position: absolute;
-        width: 22%;
-        top: 25%;
-        left: 10% ;
-    }
-    .up2{
-        position: absolute;
-        width: 7%;
-        top: 23%;
-        left:35%;
-    }
-    .up3{
-        position: absolute;
-        width: 5%;
-        top: 17%;
-        left: 50%;
-    }
-    .up4{
-        position: absolute;
-        width: 7%;
-        top: 23%;
-        right: 28%;
-    }
-    .up5{
-        position: absolute;
-        width: 5%;
-        top: 35%;
-        right: 20%;
-    }
-    .up6{
-        position: absolute;
-        width: 5%;
-        bottom:20%;
-        right: 28%;
-    }
-    .up7{
-        position: absolute;
-        width: 6%;
-        bottom: 13%;
-        right: 45%;
-    }
-    .up8{
-        position: absolute;
-        width: 8%;
-        bottom: 17%;
-        left: 30%;
-    }
-    .u-potential-text{
-        /* position: absolute; */
-        width: 43%;
-        height: auto;
-        margin: auto;
-        margin-top: 12%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+.potential{
+    width: 100%;
+}
+/* .potential img{
+        margin-right: 3%;
+        margin-left: auto;
+    } */
+.potential-1{
+    grid-area: cloud;
+    width: 100%;
+    display: flex;
 
-    }
-    .u-potential-text h1{
-        font-size: 3.25rem;
-        font-weight: 300;
-        margin-bottom: 2rem;
-        line-height: 4rem;
-    }
-    .u-potential-text p{
-        width: 90%;
-        text-align: center;
-        font-size: 1.2rem;
-        letter-spacing: 0.025rem;
-        padding-bottom: 1.8rem;
-    }
-    .u-potential-text ul{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width: 60%;
+}
+.potential-1 img{
+    max-width: 87%;
+    margin-right: 3%;
+    margin-left: auto;
 
-    }
-    .u-potential-text ul li a{
-        display: block;
-    }
+}
+.potential-2{
+    grid-area: wifi;
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+
+}
+.potential-2 img{
+    max-width: 60%;
+    
+}
+.potential-3{
+    grid-area: chat;
+    display: flex;
+    justify-content: center;
+    align-self: flex-start;
+}
+.potential-3 img{
+    max-width: 43%;
+}
+.potential-4{
+    grid-area: coin;
+    display: flex;
+    flex-direction: row-reverse;
+    align-self: flex-end;
+}
+.potential-4 img{
+    max-width: 50%;
+}
+.potential-5{
+    grid-area: user;
+}
+.potential-5 img{
+    max-width: 37%;
+}
+.potential-6{
+    grid-area: shield;
+}
+.potential-7{
+    grid-area: wallet;
+}
+.potential-8{
+    grid-area: laptop;
+}
+.potential-9{
+    grid-area: content;
+}
+.potential-10{
+    grid-area: blank;
+}
+
+
+/* untapped potential section */
 /* open source service */
 .opensource-desc{
     display: flex;
@@ -432,6 +495,7 @@ header .navbar{
     width: 80%;
     padding-left: 1.5625rem;
 }
+/* open source service */
 /* pricing table section */
 .pricing-table{
     display: flex;
@@ -551,7 +615,7 @@ header .navbar{
 }
 .plan:nth-child(3) .plan-desc div a:hover, .u-potential-text ul li:first-child a:hover{
     box-shadow: rgba(255, 138, 115, 0.5) 0px 10px 25px 0px;
-}
+}/* pricing table section */
 /* footer */
 footer{
     background-color: #343352;
@@ -629,3 +693,9 @@ footer{
 .part-of-top-footer{
     padding: 0.9375rem 0 0.9375rem;
 }
+/* top-footer section */
+
+/* bottom footer section */
+
+/* bottom footer section */
+/* footer */
