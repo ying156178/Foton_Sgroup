@@ -59,4 +59,29 @@
         margin-bottom: 1.1rem !important;
     }
     /* untapped potential section */
+    /* secure section */
+    .secure-section{
+        margin-top: 8rem !important;
+    }
+    .secure-back img{
+        width: 140px !important;
+        height: 395px !important;
+        top:-0.75rem !important;
+    }
+    .secure-heading h1{
+        font-size: 5rem;
+        line-height: 10rem;
+        letter-spacing: -2px;
+    }
+    .secure-desc h3{
+        font-size: 1.5625rem !important;
+        line-height: 2.1875rem;
+    }
+    .secure-content{
+        width: 75% !important;
+    }
+    img.setting{
+        display: none !important;
+    }
+    /* secure section */
 }

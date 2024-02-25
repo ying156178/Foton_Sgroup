@@ -1,11 +1,32 @@
 @media only screen and (max-width:1024px){
+    .untapped-background{
+        position: absolute !important;
+        /* top: -95px !important; */
+        left: -207px !important;
+        padding: 600px !important;
+    }
+    .untapped-background .back1{
+        width: 424px !important;
+        height: 250px !important;
+        top: 0px !important;
+        right: 180px !important;
+    }
+    .untapped-background .back2{
+        width: 900px !important;
+        height: 462px !important;
+    }
+    .untapped-background .back3{
+        width: 131px !important;
+        height: 88px !important;
+    }
+    /* untapped background */
+
     /* untapped potential section */
     .untapped-potential-section{
         max-width: 60% !important;
         min-width: 478px !important;
         margin: 0 auto !important;
         height: 100% !important;
-        overflow-x: hidden !important;
     }
     .untapped-potential{
         min-width: 478px;
@@ -73,7 +94,36 @@
         padding-bottom: 0 !important;
     }
     /* untapped potential section */
-    
+    /* secure section */
+    .secure-section{
+        margin-bottom: 9rem;
+    }
+    img.robot, img.server, img.server,img.glass{
+        display: none;
+    }
+    .secure-content{
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+        width: 540px !important;
+    }
+    .secure-desc{
+        width: 100% !important;
+    }
+    .secure-desc h3{
+        font-size: 2.8125rem;
+    }
+    img.setting{
+        width: 162px !important;
+        height: 72px !important;
+        top: -390px !important;
+        left: -130px !important;
+    }
+    .secure-user{
+        justify-content: center !important;
+    }
+    /* secure section */
+
 
     /* pricing table section */
     .pricing-table{

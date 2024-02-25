@@ -4,6 +4,12 @@
         font-size: 1.5rem !important;
     }
     /* overview */
+    /* secure section */
+    .secure-desc h3{
+        font-size: 2.8125rem !important;
+    }
+    /* secure section */
+
     /* opensource service section */
     .service{
         width: 75% !important;
