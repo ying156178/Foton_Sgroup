@@ -1,5 +1,78 @@
 @media only screen and (max-width:1024px){
     /* untapped potential section */
+    .untapped-potential-section{
+        max-width: 60% !important;
+        min-width: 478px !important;
+        margin: 0 auto !important;
+        height: 100% !important;
+        overflow-x: hidden !important;
+    }
+    .untapped-potential{
+        min-width: 478px;
+        overflow: hidden !important;
+        grid-template-columns: 1fr 0.5fr 1fr 0.5fr 1fr !important;
+        grid-template-rows: 2fr 0.5fr 1.5fr 0.5fr 0.5fr !important;
+        grid-template-areas: 
+        'content content content content content'
+        'chat chat chat coin coin'
+        'wifi cloud cloud cloud user'
+        'laptop laptop shield shield shield'
+        'wallet wallet wallet wallet wallet' !important
+        ;
+    }
+    .potential-1{
+        width: 90% !important;
+    }
+    .potential-2{
+        width: 100% !important;
+        justify-content: center;
+    }
+    .potential-2 img{
+        margin-left: 2%;
+    }
+    .potential-3 img{
+        width: 20%;
+    }
+    .potential-4{
+        justify-content: center;
+    }
+    .potential-4 img{
+        width: 40%;
+    }
+    .potential-5{
+        display: flex;
+        justify-content: end;
+    }
+    .potential-6{
+        align-self: flex-end !important;
+    }
+    .potential-6 img{
+        width: 17%;
+        margin-right: 20%;
+    }
+    .potential-7 img{
+        width: 12%;
+    }
+    .potential-8{
+        display: flex;
+        justify-content: center;
+    }
+    .potential-8 img{
+        width: 40%;
+    }
+    .potential-9{
+        margin-bottom: 1rem;
+    }
+    .potential-9 h1{
+        font-size: 2.75rem !important;
+        margin-bottom: 1rem !important;
+    }
+    .potential-9 p{
+        font-size: 1.2rem !important;
+        margin-bottom: 1rem !important;
+        padding-bottom: 0 !important;
+    }
+    /* untapped potential section */
     
 
     /* pricing table section */

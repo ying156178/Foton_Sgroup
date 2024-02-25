@@ -15,8 +15,13 @@ body{
     font-weight: 300;
     color: #716c80;
     background-color: #fff;
+    overflow-x: hidden;
 }
 /* overview */
+.container{
+    overflow: hidden;
+    width: 100%;
+}
 h1, h2, h3, h4, h5, h6{
     color: #58468c;
     font-family: 'Poppins',sans-serif;
@@ -130,6 +135,9 @@ header .navbar{
     overflow: hidden;
     padding: 0 30px 0 0;
     transition: padding .2s cubic-bezier(.02,.54,.58,1);
+}
+.list-spec:nth-child(5) .second .second-spec:nth-child(3) .third{
+    width: 180% !important;
 }
 .second-sub-list{
     position: relative;
@@ -352,14 +360,17 @@ header .navbar{
 /* header background */
 /* untapped potential section */
 .untapped-potential-section{
-    width: 85%;
-    margin: 0 auto;
-    height: 100vh;
+    min-width: 1024px;
+    max-width: 80%;
+    margin-left: 5%;
+    height: 110vh;
+    overflow: hidden;
 }
 .untapped-potential{
+    overflow: hidden;
     display: grid;
-    grid-template-columns: 1.5fr 0.75fr 0.75fr 0.75fr 0.75fr;
-    grid-template-rows: 0.75fr 1.5fr 0.75fr;
+    grid-template-columns: 1.5fr 0.75fr 0.73fr 0.75fr 0.75fr;
+    grid-template-rows: 0.9fr 2.5fr 0.8fr;
     justify-items: center;
     align-items: center;
     grid-auto-rows: 100px;
@@ -407,7 +418,7 @@ header .navbar{
     align-self: flex-start;
 }
 .potential-3 img{
-    max-width: 43%;
+    max-width: 50%;
 }
 .potential-4{
     grid-area: coin;
@@ -422,24 +433,63 @@ header .navbar{
     grid-area: user;
 }
 .potential-5 img{
+    margin-left: 2%;
     max-width: 37%;
 }
 .potential-6{
     grid-area: shield;
+    align-self: flex-start;
+    display: flex;
+    justify-content: flex-end;
+}
+.potential-6 img{
+    max-width: 40%;
+
 }
 .potential-7{
     grid-area: wallet;
+    align-self: flex-end;
+    display: flex;
+    justify-content: center;
+}
+.potential-7 img{
+    max-width: 45%;
 }
 .potential-8{
     grid-area: laptop;
 }
+.potential-8 img{
+    max-width: 60%;
+}
 .potential-9{
     grid-area: content;
 }
-.potential-10{
-    grid-area: blank;
+.potential-9 h1{
+    font-size: 3.25rem;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+    line-height: 4rem;
+    text-align: center;
 }
+.potential-9 p{
+    /* width: 90%; */
+    text-align: center;
+    font-size: 1.2rem;
+    letter-spacing: 0.025rem;
+    padding-bottom: 1.8rem;
+}
+.potential-9 ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
 
+}
+.potential-9 ul li a{
+    display: block;
+    margin-bottom: 0 !important;
+}
 
 /* untapped potential section */
 /* open source service */
@@ -580,7 +630,7 @@ header .navbar{
     margin: 0 auto;
     transform: translateX(-0.9375rem);
 }
-.plan-desc div a, u-potential-text ul li a, .u-potential-text ul li a{
+.plan-desc div a, .potential-9 ul li a{
     display: block;
     padding: 0.75rem 2.3125rem;
     color: #fff;
@@ -602,18 +652,18 @@ header .navbar{
 .plan:first-child .plan-desc div a:hover{
     box-shadow: rgba(123, 185, 255,0.5) 0px 10px 25px 0px;
 }
-.plan:nth-child(2) .plan-desc div a, .u-potential-text ul li:last-child a{
+.plan:nth-child(2) .plan-desc div a, .potential-9 ul li:last-child a{
     background-color: rgb(85, 128, 255);
     box-shadow: none;
 }
-.plan:nth-child(2) .plan-desc div a:hover, .u-potential-text ul li:last-child a:hover{
+.plan:nth-child(2) .plan-desc div a:hover, .potential-9 ul li:last-child a:hover{
     box-shadow: rgba(85, 128, 255, 0.5) 0px 10px 25px 0px;
 }
-.plan:nth-child(3) .plan-desc div a, .u-potential-text ul li:first-child a{
+.plan:nth-child(3) .plan-desc div a, .potential-9 ul li:first-child a{
     background-color: rgb(255, 138, 115);
     box-shadow: none;
 }
-.plan:nth-child(3) .plan-desc div a:hover, .u-potential-text ul li:first-child a:hover{
+.plan:nth-child(3) .plan-desc div a:hover, .potential-9 ul li:first-child a:hover{
     box-shadow: rgba(255, 138, 115, 0.5) 0px 10px 25px 0px;
 }/* pricing table section */
 /* footer */
