@@ -34,7 +34,7 @@
         margin: 0 auto !important;
     }
     .potential.potential-9{
-        width: 82% !important;
+        width: 100% !important;
         justify-content: center;
     }
     .potential-9 h1{
@@ -47,15 +47,16 @@
         padding-bottom: 0.75rem !important;
     }
     .potential-9 ul{
-        width: 90% !important;
+        width: 100% !important;
         flex-direction: column;
     }
     .potential-9 ul li{
-        width: 60%;
+        max-width: 55%;
+        min-width: 165px;
     }
     .potential-9 ul li a{
-        font-size: 0.75rem;
-        margin-bottom: 1.35rem !important;
+        font-size: 0.7rem;
+        margin-bottom: 1.1rem !important;
     }
     /* untapped potential section */
 }
