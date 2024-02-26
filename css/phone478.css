@@ -72,6 +72,7 @@
         font-size: 5rem;
         line-height: 10rem;
         letter-spacing: -2px;
+        margin-left: 0px !important;
     }
     .secure-desc h3{
         font-size: 1.5625rem !important;

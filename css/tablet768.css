@@ -8,6 +8,15 @@
     .secure-desc h3{
         font-size: 2.8125rem !important;
     }
+    .secure-back img{
+        width: 100px !important;
+        height: 323px !important;
+        top: 0rem;
+    }
+    .secure-heading h1{
+        font-size: 6.5rem !important;
+        letter-spacing: 0.1px;
+    }
     /* secure section */
 
     /* opensource service section */
