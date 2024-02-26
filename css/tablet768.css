@@ -1,10 +1,13 @@
 @media only screen and (max-width:768px){
     /* overview */
     h3{
-        font-size: 1.5rem !important;
+        font-size: 2.8125rem !important;
     }
     /* overview */
     /* secure section */
+    .secure-section{
+        margin-bottom: 6rem !important;
+    }
     .secure-desc h3{
         font-size: 2.8125rem !important;
     }
@@ -18,7 +21,23 @@
         letter-spacing: 0.1px;
     }
     /* secure section */
-
+    /* digital section */
+    .digital-desc h3,
+    .unique-desc h3{
+        font-size: 2.8125rem !important;
+    }
+    .digital-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .digital-image .shield{
+        left: 21% !important;
+    }
+    .digital-image .server{
+        left: 59% !important;
+    }
+    /* digital section */
     /* opensource service section */
     .service{
         width: 75% !important;
@@ -27,6 +46,16 @@
         width: 90% !important;
     }
     /* opensource service section */
+    /* unique section */
+    .unique-section{
+        width: 100% !important;
+    }
+    .unique-desc{
+        width: 60% !important;
+    }
+
+    /* unique section */
+
     /* pricing table section */
     .pricing-table{
         flex-direction: column;

@@ -1,4 +1,9 @@
-@media only screen and (max-width:479px){
+@media only screen and (max-width:478px){
+    /* overview */
+    h3{
+        font-size: 1.5625rem !important;
+    }
+    /* overview */
     /* untapped potential section */
     *{
         box-sizing: border-box;
@@ -74,7 +79,9 @@
         letter-spacing: -2px;
         margin-left: 0px !important;
     }
-    .secure-desc h3{
+    .secure-desc h3,
+    .digital-desc h3,
+    .unique-desc h3{
         font-size: 1.5625rem !important;
         line-height: 2.1875rem;
     }
@@ -85,4 +92,53 @@
         display: none !important;
     }
     /* secure section */
+    /* digital section */
+    .digital-image .server{
+        display: none !important;
+    }
+    .digital-image .digital.shield{
+        margin: 0 auto !important;
+        left: 0 !important;
+        position: relative;
+        width: 119px !important;
+        height: 164px !important;
+
+    }
+    /* digital section */
+    /* opensource section */
+    .opensource-desc{
+        padding-top: 5rem !important;
+    }
+    /* opensource section */
+    /* unique section */
+    .unique-metrics{
+        flex-direction: column !important;
+        align-items: center !important;;
+    }
+    .metric{
+        width: 100%;
+    }
+    .metric>h2{
+        font-size: 1.875rem;
+    }
+    .metric>p{
+       font-size: 0.6875rem;
+    }
+    /* unique section */
+    /* protect section */
+    .protect-image .server{
+        display: none !important;
+    }
+    .protect-desc{
+        width: 60% !important;
+    }
+    .protect-desc h1{
+        line-height: 1.5rem;
+    }
+    /* protect section */
+    /* pricing table */
+    .pricing-table{
+        margin-top: 3rem !important;
+    }
+    /* pricing table */
 }

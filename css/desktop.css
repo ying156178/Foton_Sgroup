@@ -222,7 +222,7 @@ header .navbar{
     position: fixed;
     width: 100%;
     left: 0;
-    top: 115px;
+    top: 96px;
 }
 .list-spec:nth-child(3) .second{
     width: 280%;
@@ -536,7 +536,8 @@ header .navbar{
     z-index: -1;
     width: 100%;
 }
-.secure-heading>h1{
+.secure-heading>h1,
+.unique-heading>h1{
     text-align: center;
     display: block;
     font-family: 'Poppins', sans-serif;
@@ -557,7 +558,9 @@ header .navbar{
     margin-right: 15px;
 }
 .secure-desc h3,
-.digital-desc h3{
+.digital-desc h3,
+.unique-desc h3,
+.protect-desc h3{
     font-family: 'Poppins', sans-serif;
     line-height: 3.4375rem;
     font-weight: 300;
@@ -566,7 +569,9 @@ header .navbar{
     margin-bottom: 1.5rem;
 }
 .secure-desc p,
-.digital-desc p{
+.digital-desc p,
+.unique-desc p,
+.protect-desc p{
     color: rgb(113, 108, 128);
     line-height: 2rem;
     font-weight: 300;
@@ -661,10 +666,11 @@ header .navbar{
 }
 .digital-content{
     display: flex;
-    width: 970px;
+    max-width: 970px;
+    min-width: 100%;
     margin: 0 auto;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-around; */
     overflow: hidden;
 }
 .digital-image{
@@ -673,10 +679,12 @@ header .navbar{
 }
 .digital-desc{
     margin-top: 60px;
-    margin-left: 190px;
-    width: 50%;
+    margin-left: 5%;
+    min-width: 394px;
+    max-width: 29%;
 }
-.digital-desc ul{
+.digital-desc ul,
+.protect-desc ul{
     max-width: 37%;
     min-width: 160px;
 }
@@ -712,8 +720,12 @@ header .navbar{
     top: 320px;
 }
 
+
 /* digital section */
 /* open source service */
+.opensource-sec{
+    margin-bottom: 11rem;
+}
 .opensource-desc{
     display: flex;
     width: 60%;
@@ -767,6 +779,115 @@ header .navbar{
     padding-left: 1.5625rem;
 }
 /* open source service */
+/* unique section */
+.unique-section{
+    position: relative;
+}
+.unique-heading{
+    position: absolute;
+}
+.unique-back{
+    position: absolute;
+    z-index: -5;
+}
+.unique-back img{
+    width: 348px;
+    height: 554px;
+    left: 1px;
+    top: 79px;
+}
+.unique-content{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.unique-image img{
+    width: 699px;
+    height: 445px;
+    left: 2px;
+    top: 135px;
+}
+.unique-heading{
+    width: 100%;
+    z-index: -1;
+    top: -8rem;
+    text-align: center;
+}
+.unique-desc{
+    width: 33%;
+    /* min-width: 500px; */
+    margin-left: 5%;
+}
+.unique-metrics{
+    display: flex;
+    width: 100%;
+}
+.unique-metrics .metric{
+    width: 33%;
+}
+.metric>h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.8125rem;
+    line-height: 3.4375rem;
+    font-weight: 300;
+    letter-spacing: 0px;
+    color: rgb(88, 70, 140);
+}
+.metric>p{
+    color: rgb(88, 70, 140);
+    font-weight: 500;
+    font-size: 0.8125rem;
+    line-height: 0.8125rem;
+    letter-spacing: 1px;
+
+}
+/* unique section */
+/* protect section */
+.protect-section{
+    position: relative;
+}
+.protect-back{
+    position: absolute;
+    z-index: -1;
+}
+.protect-back img{
+    position: absolute;
+    width: 706px;
+    height: 453px;
+    left: 774px;
+    top: 23px;
+}
+.protect-image .server-board{
+    position: absolute;
+    width: 545px;
+    height: 352px;
+    left: 817px;
+    top: 24px;
+}
+.protect-image .server{
+    width: 444px;
+    height: 152px;
+}
+.protect-image .server-1{
+    position: absolute;
+    left: 886px;
+    top: 121px;
+}
+.protect-image .server-2{
+    position: absolute;
+    left: 886px;
+    top: 60px;
+}
+.protect-content{
+    display: flex;
+    align-items: center;
+}
+.protect-desc{
+    width: 29%;
+    margin-left: 17%;
+    margin-top: 3rem;
+}
+/* protect section */
 /* pricing table section */
 .pricing-table{
     display: flex;
@@ -853,7 +974,8 @@ header .navbar{
 }
 .plan-desc div a, 
 .potential-9 ul li a,
-.digital-desc ul li a{
+.digital-desc ul li a,
+.protect-desc ul li a{
     display: block;
     padding: 0.75rem 2.3125rem;
     color: #fff;
@@ -884,13 +1006,15 @@ header .navbar{
 }
 .plan:nth-child(3) .plan-desc div a, 
 .potential-9 ul li:first-child a,
-.digital-desc ul li a{
+.digital-desc ul li a,
+.protect-desc ul li a{
     background-color: rgb(255, 138, 115);
     box-shadow: none;
 }
 .plan:nth-child(3) .plan-desc div a:hover, 
 .potential-9 ul li:first-child a:hover,
-.digital-desc ul li a:hover{
+.digital-desc ul li a:hover,
+.protect-desc ul li a:hover{
     box-shadow: rgba(255, 138, 115, 0.5) 0px 10px 25px 0px;
 }/* pricing table section */
 /* footer */

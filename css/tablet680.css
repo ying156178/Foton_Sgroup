@@ -1,0 +1,11 @@
+@media only screen and (max-width:680px){
+    h3{
+        font-size: 1.5rem !important;
+    }
+    .container{
+        width: 100% !important;
+    }
+    .unique-desc{
+        width: 70% !important;
+    }
+}
