@@ -297,4 +297,17 @@
         margin: 0 auto;
     }
     /* pricing table section */
+    /* top footer section */
+    .top-footer{
+        flex-wrap: wrap;
+        width: 80% !important;
+        margin: 0 auto !important;
+        justify-content: space-around;
+    }
+    .part-of-top-footer{
+        width: 47% !important;
+        padding-right: 8% !important;
+    }
+
+    /* top footer section */
 }
