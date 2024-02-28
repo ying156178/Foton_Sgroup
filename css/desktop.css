@@ -1101,6 +1101,21 @@ footer{
 /* top-footer section */
 
 /* bottom footer section */
-
+.bottom-footer{
+    background-color: #2d2d47;
+    padding: 26px 0;
+}
+.bottom-footer-text{
+    text-align: center;
+    font-size: 0.875rem;
+    color: #fff;
+}
+.bottom-footer-text a{
+    color: #fff;
+    transition:  .2s cubic-bezier(.02,.54,.58,1);
+}
+.bottom-footer-text a:hover{
+    color: #ff8a73;
+}
 /* bottom footer section */
 /* footer */

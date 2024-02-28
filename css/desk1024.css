@@ -238,14 +238,18 @@
     .protect-image .server-1{
         width: 398px !important;
         height: 136px !important;
-        left: 25% !important;
-        top: 455px !important;
+        left: 5% !important;
+        top: 405px !important;
+        right: 5%;
+        margin: 0 auto !important;
     }
     .protect-image .server-2{
         width: 398px !important;
         height: 137px !important;
-        left: 25% !important;
-        top: 400px !important;
+        left: 5% !important;
+        top: 350px !important;
+        right: 5%;
+        margin: 0 auto;
     }
     .button li{
         width: 100%;
