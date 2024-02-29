@@ -80,7 +80,6 @@
     .menulist .list-spec span{
         display: block;
         color: rgb(88, 70, 140);
-        font-family: Poppins, sans-serif;
         font-size: 14px;
         letter-spacing: 0.085em;
         line-height: 23px;
@@ -101,7 +100,16 @@
         width: 100% !important;
 
     }
-    .second .second-spec span{
+    .second-spec{
+        padding: 9px 0 !important;
+    }
+    .second .second-spec:hover>span
+    .second-sub-list-spec:hover>span{
+        padding: 9px 0px !important;
+        color: rgb(255, 138, 115);
+    }
+    .second .second-spec span,
+    .second-sub-list .second-sub-list-spec span{
         display: block !important;
         /* transition: none !important;     */
         padding: 9px 0px !important;
@@ -114,24 +122,44 @@
         color: rgb(113, 108, 128);
 
     }
-    .second .second-spec:hover span{
-        padding: 9px 0px !important;
-        color: rgb(255, 138, 115);
-    }
-    .second-spec::before{
+    
+    .second-spec::before,
+    .list-spec::before,
+    .second-sub-list-spec::before{
         display: none !important;
     }
-    .list-spec::before{
-        display: none !important;
-    }
+    
     .list-spec:first-child .second .second-spec:nth-child(3).hosting-home>span{
         padding: 9px 0px !important;
         color: #ff8a73;
     }
-    /* ::before{
+    .second-sub-list{
         display: none !important;
-    } */
-
+    }
+    .second-inner-list{
+        width: 100%;
+        flex-direction: column !important;
+    }
+    .second-inner-list .second-sub a span,
+    .second-sub-list-spec span{
+        display: block !important;
+        /* transition: none !important; */
+        text-transform: capitalize !important;
+        padding: 9px 0px !important;
+        font-size: 1rem !important;
+        line-height: 24px !important;
+        font-weight: 300 !important;
+        letter-spacing: 0px !important;
+        font-family: 'Nunito', sans-serif !important;
+        color: rgb(113, 108, 128) !important;
+    }
+    .second-sub{
+        width: 100% !important;
+    }
+    .second-sub a:hover~ .second-sub-list,
+    .second-sub-list:hover{
+        display: block !important;
+    }
     /* navbar */
 
     .untapped-background{
