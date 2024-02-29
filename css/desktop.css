@@ -59,15 +59,67 @@ header .navbar{
     align-items: center;
     align-items: center;
     padding-bottom: 25px;
+    animation-name: header-animation;
+    animation-delay: 4s;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes header-animation {
+    from{
+        background-color: transparent;
+    }
+    to{
+        background-color: #fff;
+        border-bottom: 1px solid #edeff2;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        position: fixed;
+        width: 100%;
+        z-index: 5;
+    }
+}
+.fa-solid.fa-cart-shopping{
+    animation-name: disappear-cart;
+    animation-delay: 4s;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes disappear-cart{
+    100%{
+        opacity: 0;
+        visibility: hidden;
+    }
 }
 /* navbar */
 
 /* navbar logo */
 .logo{
     width: 7%;
+    position: relative;
+    display: flex;
+    align-items: center;
 }
 .logo a img{
     width: 100%;
+}
+.logo-hell{
+    position: absolute;
+}
+.navbar .logo .logo-hell:first-child{
+    z-index: 6;
+}
+.navbar .logo .logo-hell:last-child{
+    opacity: 0;
+    animation-name: logo-hell2;
+    animation-delay: 4s;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes logo-hell2{
+    100%{
+        opacity: 1;
+        z-index: 8;
+    }
 }
 .logo1{
     display: none;
@@ -90,6 +142,7 @@ header .navbar{
 .list-spec{
     position: relative;
     cursor: pointer;
+    z-index: 2;
 }
 .second, .third,
 .list-spec:nth-child(3) .second .second-spec:nth-child(5) .third,
@@ -1017,6 +1070,39 @@ header .navbar{
 .protect-desc ul li a:hover{
     box-shadow: rgba(255, 138, 115, 0.5) 0px 10px 25px 0px;
 }/* pricing table section */
+/* logo-load-section */
+.logo-load-section{
+    background-image: url('./../asset/img/logo-load/h13-bg-img-1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+}
+
+.slide-container{
+    padding-top: 11.25rem;
+    padding-bottom: 10.625rem;
+    width: 90%;
+    position: relative;
+}
+.container-logo{
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+.container-logo li{
+    display: flex;
+    align-items: center;
+}
+.container-logo-low-opacity{
+    position: relative;
+    z-index: 3;
+    opacity: 1;
+    transition: opacity .2s cubic-bezier(.02,.54,.58,1);
+}
+.container-logo.low-opacity li a:hover{
+    opacity: 0;
+}
+/* logo-load-section */
 /* footer */
 footer{
     background-color: #343352;
