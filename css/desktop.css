@@ -561,8 +561,45 @@ header .navbar{
 } */
 /* animation for untapped */
 /* untapped potential section */
+/* animation for untapped */
+.potential-opa{
+    opacity: 0;
+    animation-name: potential;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+@keyframes potential{
+    100%{
+        opacity: 1;
+    }
+}
+.potential-1{
+    animation-delay: 0.2s;
+}
+.potential-2{
+    animation-delay: 0.4s;
+}
+.potential-3{
+    animation-delay: 0.6s;
+}
+.potential-4{
+    animation-delay: 0.8s;
+}
+.potential-5{
+    animation-delay: 1s;
+}
+.potential-6{
+    animation-delay: 1.2s;
+}
+.potential-7{
+    animation-delay: 1.4s;
+}
+.potential-8{
+    animation-delay: 1.6s;
+}
 
-
+/* animation for untapped */
 /* secure section */
 .secure-section{
     margin-top: 15rem;
@@ -690,9 +727,10 @@ header .navbar{
     top: 150px;
     left: -40px;
 }
-.secure-image .server-2{
+.secure-image .server.server-2{
     top: 350px;
-    right: 30px;
+    right: 30px !important;
+    
 }
 .secure-image .setting{
     width: 102px;
@@ -701,7 +739,44 @@ header .navbar{
     right: 30px;
 }
 /* secure section */
-
+/* animation secure section */
+.secure-ani{
+    animation-name: secure-animation;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+.secure-back img{
+    animation-name: secure-back;
+    animation-delay: 0.5s;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+@keyframes secure-back{
+    0%{
+        right: -5rem;
+    }
+    100%{
+        right: 0rem;
+    }
+}
+.secure-heading{
+    animation-name: secure-heading;
+    animation-delay: 0.5s;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+@keyframes secure-heading{
+    0%{
+        margin-left: 1rem;
+    }
+    100%{
+        margin-left: 2rem;
+    }
+}
+/* animation secure section */
 /* digital section */
 .digital-section{
     position: relative;
@@ -764,7 +839,7 @@ header .navbar{
     left: 64px;
     top: 162px;
 }
-.server-2{
+.digital.server-2{
     left: 550px;
     top: 166px;
 }
@@ -1103,6 +1178,31 @@ header .navbar{
     opacity: 0;
 }
 /* logo-load-section */
+/* bottom up button */
+a.bottom-up{
+    display: inline-block;
+    background-color: #ff8a73;
+    border-radius: 4px;
+    width: 45px;
+    height: 45px;
+    transition: all 0.25s ease 0s;
+    position: fixed;
+    z-index: 10;
+    bottom: 50px;
+    right: 50px;
+}
+span.button-up{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+span.button-up i{
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255);
+}
+/* bottom up button */
 /* footer */
 footer{
     background-color: #343352;
