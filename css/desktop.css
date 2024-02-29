@@ -18,6 +18,9 @@ body{
     overflow-x: hidden;
 }
 /* overview */
+html{
+    scroll-behavior: smooth;
+}
 .container{
     overflow: hidden;
     width: 100%;
@@ -93,6 +96,9 @@ header .navbar{
 /* navbar */
 
 /* navbar logo */
+.menu-active{
+    display: none ;
+}
 .logo{
     width: 7%;
     position: relative;
@@ -108,7 +114,7 @@ header .navbar{
 .navbar .logo .logo-hell:first-child{
     z-index: 6;
 }
-.navbar .logo .logo-hell:last-child{
+.logo .logo-hell:last-child{
     opacity: 0;
     animation-name: logo-hell2;
     animation-delay: 4s;
