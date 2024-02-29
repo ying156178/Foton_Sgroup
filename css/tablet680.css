@@ -8,4 +8,14 @@
     .unique-desc{
         width: 70% !important;
     }
+
+    /* footer section */
+    .top-footer{
+        width: 65% !important;
+        flex-direction: column !important;
+    }
+    .top-footer .part-of-top-footer{
+        width: 100% !important;
+    }
+    /* footer section */
 }

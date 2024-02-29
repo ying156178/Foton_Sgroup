@@ -19,6 +19,7 @@
     .secure-heading h1{
         font-size: 6.5rem !important;
         letter-spacing: 0.1px;
+        margin-left: 0 !important;
     }
     /* secure section */
     /* digital section */
@@ -53,13 +54,16 @@
     .unique-desc{
         width: 60% !important;
     }
-
+    .unique-heading>h1{
+        font-size: 6.5rem !important;
+    }
     /* unique section */
 
     /* pricing table section */
     .pricing-table{
         flex-direction: column;
         width: 100%;
+        padding-bottom: 0px !important;
     }
     .plan{
         width: 80%;
@@ -68,7 +72,12 @@
         padding: 0.5rem 1.75rem;
     }
     /* pricing table section */
+    /* logo-load section */
 
+    .logo-load-section{
+        background-image: none !important;
+    }
+    /* logo-load section */
     /* footer */
     /* top-footer section */
     /* .top-footer{
@@ -76,6 +85,13 @@
     } */
     .part-of-top-footer{
         width: 40% !important;
+        padding-right: 0px !important;
+    }
+    .top-footer:last-child .part-of-top-footer ul{
+        width: 90% !important;
+    }
+    .top-footer:last-child .part-of-top-footer ul li{
+        width: 50% !important;
     }
     /* top-footer section */
 

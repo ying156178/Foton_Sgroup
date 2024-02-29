@@ -1154,6 +1154,8 @@ header .navbar{
 }
 
 .slide-container{
+    display: flex;
+    align-items: center;
     padding-top: 11.25rem;
     padding-bottom: 10.625rem;
     width: 90%;
@@ -1190,6 +1192,9 @@ a.bottom-up{
     z-index: 10;
     bottom: 50px;
     right: 50px;
+}
+a.bottom-up:hover{
+    bottom: 60px;
 }
 span.button-up{
     width: 100%;
@@ -1275,6 +1280,7 @@ footer{
 }
 .part-of-top-footer:nth-child(4) ul li{
     width: 100%;
+    padding-right: 15px;
 }
 .part-of-top-footer:nth-child(1), 
 .part-of-top-footer:nth-child(2), 
