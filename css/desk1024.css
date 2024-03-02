@@ -104,6 +104,10 @@
         overflow-x: hidden;
         
     }
+    .third{
+        position: relative !important;
+        margin-left: 15px !important;
+    }
     /* for Chrome Opera Safari */
     .list-spec .second::-webkit-scrollbar{
         display: none !important;
