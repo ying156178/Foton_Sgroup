@@ -407,8 +407,8 @@ header .navbar{
     z-index: -3;
     width: 1060px;
     height: 500px;
-    top: -55px;
-    right: 0px;
+    top: -20px;
+    right: 1250px;
 }
 .untapped-background .back2{
     position: absolute;
