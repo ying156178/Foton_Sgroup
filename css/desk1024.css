@@ -9,7 +9,7 @@
         background-color: #fff;
         border-bottom: 1px solid #edeff2;
         padding-top: 60px !important;
-        padding-bottom: 25px !important;
+        padding-bottom: 0px !important;
         position: fixed;
         width: 100%;
         z-index: 5;
@@ -21,8 +21,10 @@
         width: 100% !important;
     }
     .menulist{
-        top: 100px;
         display: none !important;
+    }
+    .menulist .list-spec:last-child span{
+        border: none !important;
     }
     .navbar .logo .logo-hell:first-child{
         display: none !important;
@@ -53,7 +55,7 @@
         position: absolute !important;
         top: 25px !important;
         left: 10% !important;
-        padding-bottom: 50px;
+        padding-bottom: 13px;
     }
     .menu-active i.fa-solid.fa-bars{
         transition: color .2s cubic-bezier(.02,.54,.58,1);
@@ -68,11 +70,11 @@
     .menu-active:hover ~ul,
     .menulist:hover{
         display: block !important;
-        z-index: 16;
+        z-index: 16;     
     }
     .menulist{
         flex-direction: column !important;
-        width: 100%;
+        width: calc(100% + 60px) !important;
     }
     .menulist .list-spec{
         width: 100%;
@@ -85,7 +87,7 @@
         line-height: 23px;
         text-transform: uppercase;
         font-weight: 400;
-        padding: 9px 0px;
+        padding: 9px 0px !important;
         border-bottom: 1px solid rgb(237, 239, 242);
         cursor: pointer;
     }
@@ -98,17 +100,20 @@
         border: none !important;
         box-shadow: none !important;
         width: 100% !important;
+        max-height: 40% !important;
+        overflow-y: scroll !important;;
 
     }
-    .second-spec{
-        padding: 9px 0 !important;
-    }
-    .second .second-spec:hover>span
+    .list-spec .second-spec:hover>span
     .second-sub-list-spec:hover>span{
         padding: 9px 0px !important;
         color: rgb(255, 138, 115);
     }
-    .second .second-spec span,
+    .second-spec{
+        padding: 0 !important;
+        margin-left: 15px !important;
+    }
+    .list-spec .second .second-spec span,
     .second-sub-list .second-sub-list-spec span{
         display: block !important;
         /* transition: none !important;     */
@@ -128,11 +133,11 @@
     .second-sub-list-spec::before{
         display: none !important;
     }
-    
     .list-spec:first-child .second .second-spec:nth-child(3).hosting-home>span{
         padding: 9px 0px !important;
         color: #ff8a73;
     }
+    
     .second-sub-list{
         display: none !important;
     }
@@ -155,6 +160,9 @@
     }
     .second-sub{
         width: 100% !important;
+    }
+    .second .second-spec:hover>span{
+        color: #ff8a73;
     }
     .second-sub a:hover~ .second-sub-list,
     .second-sub-list:hover{
