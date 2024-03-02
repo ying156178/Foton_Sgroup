@@ -9,7 +9,6 @@
         background-color: #fff;
         border-bottom: 1px solid #edeff2;
         padding-top: 60px !important;
-        padding-bottom: 0px !important;
         position: fixed;
         width: 100%;
         z-index: 5;
@@ -23,9 +22,9 @@
     .menulist{
         display: none !important;
     }
-    .menulist .list-spec:last-child span{
+    /* .menulist .list-spec:last-child span{
         border: none !important;
-    }
+    } */
     .navbar .logo .logo-hell:first-child{
         display: none !important;
     }
@@ -74,7 +73,7 @@
     }
     .menulist{
         flex-direction: column !important;
-        width: calc(100% + 60px) !important;
+        width: 100% !important;
     }
     .menulist .list-spec{
         width: 100%;
@@ -100,18 +99,49 @@
         border: none !important;
         box-shadow: none !important;
         width: 100% !important;
-        max-height: 40% !important;
-        overflow-y: scroll !important;;
-
+        height: 150px !important;
+        overflow-y: scroll !important;
+        overflow-x: hidden;
+        
+    }
+    /* for Chrome Opera Safari */
+    .list-spec .second::-webkit-scrollbar{
+        display: none !important;
+    }
+    /* for others */
+    .list-spec .second{
+        -ms-overflow-style: none; 
+        scrollbar-width: none;
+    }
+    .second-sub-list .second-sub-list-spec>span{
+        padding: 9px 0px !important;
     }
     .list-spec .second-spec:hover>span
-    .second-sub-list-spec:hover>span{
+    .second-sub-list-spec:hover>span,
+    .second-sub-list .second-sub-list-spec:hover>span{
         padding: 9px 0px !important;
         color: rgb(255, 138, 115);
     }
-    .second-spec{
+    .second-spec,
+    .second-sub-list-spec{
         padding: 0 !important;
         margin-left: 15px !important;
+        overflow: visible !important;
+    }
+    .third{
+        position: relative !important;
+        top: 0 !important;
+        left: 0 !important;
+        overflow: visible !important;
+        box-shadow: none !important;
+        padding: 0px !important;
+    }
+    .third-spec{
+        padding: 0px !important;
+    }
+    .third-spec::before{
+        display: none !important;
+        
     }
     .list-spec .second .second-spec span,
     .second-sub-list .second-sub-list-spec span{
@@ -161,12 +191,17 @@
     .second-sub{
         width: 100% !important;
     }
-    .second .second-spec:hover>span{
-        color: #ff8a73;
+    .second .second-spec:hover>span,
+    .third .third-spec:hover>span,
+    .second-sub-list-spec:hover>span{
+        color: #ff8a73 !important;
     }
     .second-sub a:hover~ .second-sub-list,
     .second-sub-list:hover{
         display: block !important;
+    }
+    .second-inner-list .second-sub a span{
+        border-bottom: 1px solid #edeff2 !important;
     }
     /* navbar */
 
