@@ -1,4 +1,4 @@
-@media only screen and (max-width:478px){
+@media only screen and (max-width:479px){
     /* overview */
     h3{
         font-size: 1.5625rem !important;
@@ -39,10 +39,10 @@
         margin: 0 auto !important;
     }
     .potential.potential-9{
-        width: 100% !important;
+        width: 70% !important;
         justify-content: center;
     }
-    .potential-9 h1{
+    .untapped-potential .potential.potential-9 h1{
         font-size: 1.7rem !important;
         margin-bottom: 0.3rem !important;
 
@@ -81,9 +81,11 @@
     }
     .secure-desc h3,
     .digital-desc h3,
-    .unique-desc h3{
+    .unique-desc h3,
+    .opensource-desc h3{
         font-size: 1.5625rem !important;
         line-height: 2.1875rem;
+        font-weight: 300 !important;
     }
     .secure-content{
         width: 75% !important;
@@ -93,6 +95,16 @@
     }
     /* secure section */
     /* digital section */
+    .digital-section{
+        width: 70% !important;
+        margin: 0 auto !important;
+    }
+    .digital-content{
+        width: 100% !important;
+    }
+    .digital-desc{
+        min-width: 100% !important;
+    }
     .digital-image .server{
         display: none !important;
     }
@@ -104,6 +116,7 @@
         height: 164px !important;
 
     }
+
     /* digital section */
     /* opensource section */
     .opensource-desc{
